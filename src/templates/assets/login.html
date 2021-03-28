@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/art.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    
+    <link href="assets/Product example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Login</title>
+</head>
+
+
+<nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="/">Steel Bridge</a>
+    <a class="py-2 d-none d-md-inline-block" href="https://getbootstrap.com/docs/4.1/examples/product/#"></a>
+  </div>
+</nav>
+
+<body>
+    <div class="main" style="max-height: 350px;">
+    <div class="container" style="min-height: 250px;">
+      <p class="sign" align="center">👨‍🎨Welcome to steel bridge👩‍🎨</p>
+      <form name="passdata" action="" method="post">
+        <input class="un " name="username" type="email" id="txtEmail" placeholder="Eamil">
+        <input class="pass" name="password" type="password" id="txtPassword" placeholder="Password">
+        <button id="btnLogin"  align="center" class="submit">
+            Login
+        </button>
+      </form>
+        <p></p>
+    </div>
+  </div>
+{% if failedlogin%}
+<p align="center">Wrong Email or Password</p>
+{%endif%}
+{% if logout%}
+<p align="center">Successful Logout</p>
+{%endif%}
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/Product example for Bootstrap_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="assets/Product example for Bootstrap_files/popper.min.js"></script>
+    <script src="assets/Product example for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="assets/Product example for Bootstrap_files/holder.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="assets/js/index.js"></script>
+</body>
+</html>
